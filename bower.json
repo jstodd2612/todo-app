@@ -1,0 +1,17 @@
+{
+  "name": "todo-app",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jstodd2612/todo-app",
+  "authors": [
+    "jstodd <jstodd2612@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
