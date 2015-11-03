@@ -1,8 +1,8 @@
-angular.module('TodoApp', [
+angular
+.module('TodoApp', [
   'ngRoute',
   'LoginController',
 ])
-
 .config([
   '$routeProvider',
   function ($routeProvider) { 'use strict';
