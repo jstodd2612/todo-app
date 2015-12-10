@@ -2,7 +2,7 @@ angular
 .module('LoginController', [
   'dgmTodo.auth',
   'dgmTodo.users',
-  'ToggleDirective',
+  'toggleDirective',
 ])
 .controller('LoginController', [
   'auth',
@@ -11,8 +11,8 @@ angular
   function (auth, users, $location) {
     var login = this;
 
-    auth.getCurrentUser().then(function(currentUser){
-      if (currentUser) {
+    auth.isLoggedIn().then(function(isLoggedIn) {
+      if (isLoggedIn) {
         $location.url('/todos');
       }
     });

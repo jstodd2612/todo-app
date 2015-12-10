@@ -2,8 +2,8 @@ angular
 .module('TodoApp', [
   'ngRoute',
   'LoginController',
-  'logoutDirective',
   'TodosController',
+  'logoutDirective',
 ])
 .config([
   '$routeProvider',
@@ -17,7 +17,7 @@ angular
       .when('/todos', {
         templateUrl: '/partials/todos-controller.html',
         controller: 'TodosController',
-        controllerAs: 'todo'
+        controllerAs: 'todo',
       })
       .otherwise('/login');
   },
